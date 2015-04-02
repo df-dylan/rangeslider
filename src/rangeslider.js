@@ -371,7 +371,8 @@
         // Set the new value and fire the `input` event
         this.$element
             .val(value)
-            .trigger('input', { origin: this.identifier });
+            .trigger('input', { origin: this.identifier })
+            .trigger('change', { origin: this.identifier });
     };
 
     Plugin.prototype.destroy = function() {
