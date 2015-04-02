@@ -316,6 +316,7 @@
         if (this.onSlide && typeof this.onSlide === 'function') {
             this.onSlide(left, value);
         }
+        this.$element.trigger('change', { origin: this.identifier });
     };
 
     // Returns element position relative to the parent
@@ -371,8 +372,7 @@
         // Set the new value and fire the `input` event
         this.$element
             .val(value)
-            .trigger('input', { origin: this.identifier })
-            .trigger('change', { origin: this.identifier });
+            .trigger('input', { origin: this.identifier });
     };
 
     Plugin.prototype.destroy = function() {
