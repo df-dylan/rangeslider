@@ -1,6 +1,6 @@
 {
-  "name": "rangeslider.js",
-  "title": "rangeslider.js",
+  "name": "rangeslider",
+  "title": "rangeslider",
   "description": "Simple, small and fast JavaScript/jQuery polyfill for the HTML5 <input type=\"range\"> slider element",
   "version": "1.1.0",
   "codename": "Pacific Blue",
