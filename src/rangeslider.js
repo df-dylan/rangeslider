@@ -316,7 +316,7 @@
         if (this.onSlide && typeof this.onSlide === 'function') {
             this.onSlide(left, value);
         }
-        this.$element.trigger('change', { origin: this.identifier });
+        this.$element.trigger('change');
     };
 
     // Returns element position relative to the parent
